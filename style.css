@@ -1,0 +1,792 @@
+@font-face {
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+  src: url('fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Montserrat-ExtraBold.woff') format('woff'),
+  url('fonts/Montserrat-ExtraBold.ttf')  format('truetype'),
+  url('fonts/Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font Awesome';
+  src: url('fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/fontawesome-webfont.woff') format('woff'),
+  url('fonts/fontawesome-webfont.ttf')  format('truetype'),
+  url('fonts/fontawesome-webfont.svg#Font Awesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: ;
+	font-size: ;
+	background: #eff0f2;
+}
+
+a { display: inline-block; }
+
+.body-wrapper { position: relative; overflow: hidden;}
+
+.wrapper { max-width: 1250px; margin: 0 auto; padding: 0 14px;}
+
+.logo-schart {
+	display: inline-block;
+	vertical-align: middle;
+	background: url('images/logo-schart.png') no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+}
+/*-- Section-Content --*/
+.section-content { padding: 0px 0 100px 30px; }
+
+.main-content { padding: 88px 0 0 252px; }
+
+.section-content label {
+	font-family: 'Montserrat-ExtraBold', sans-serif;
+	font-size: 30px;
+	font-weight: 900;
+	color: #425465;
+	line-height: 2;
+}
+.section-content a {
+	display: block;
+}
+.section-content a > label {
+	font-size: 15px;
+	text-decoration: underline;
+}
+/*-- Main Header --*/
+.main-header {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	background: #252d3a;   
+	padding: 3px 0;
+	width: 100%;
+}
+
+/*-- Main nav --*/
+.main-nav {
+	width: 100%;
+}
+
+.nav-home {
+	display: inline-block;
+}
+.nav-home ul, .game-nav ul {
+	font-size: 0;
+}
+
+.nav-home ul li, .game-nav ul li {		
+	display: inline-block;
+	font-size: 12px;
+	color: #787e8a;
+}
+
+.nav-home ul li a {
+	font-weight: 900;
+	color: black;
+	text-transform: uppercase;
+	color: #787e8a;
+	padding: 0 20px;
+}
+
+/*-- Game Nav --*/
+.game-nav {
+	width: 100%;
+	padding-left: 32px;
+	border-top: 1px solid #2c3542;
+}
+.game-nav ul li a {
+	font-weight: 900;
+	color: #787e8a;
+	text-transform: uppercase;
+	border-bottom: 2px solid transparent;
+	padding: 20px 50px 20px 50px;	
+	transition: all 0.3s ease-in-out;
+  	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+}
+
+.game-nav ul li a:hover {
+	border-bottom: 2px solid red;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+/*-- Side Bar --*/
+.side-bar {
+	position: fixed;
+	float: left;
+	overflow-y: scroll;
+	background-color: #f9f9f9;
+	top: 88px;
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	max-width: 252px;
+	margin: 0 auto;
+	border: 2px solid #edf0f2;
+	word-wrap: break-word;
+}
+.side-bar label {
+	display: block;
+	padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #343434;
+}
+.side-bar > div {
+	margin-bottom: 100px;
+}
+/*-- New Game Options --*/
+.side-bar-options ul li {
+	padding: 10px 0;
+}
+
+.side-bar-options ul li:first-child {
+	padding: 20px 0;
+}
+.side-bar-options ul li input[type=text], .side-bar-options ul li select {
+    font-size: .875rem;
+    color: #2e3235;
+    min-width: 180px;
+    max-width: 180px;
+    background: #f2f5f7;
+    padding: 7px 0 7px 7px;
+    border: 2px solid #dddedf;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+input[type=radio] {
+	-webkit-appearance: radio;
+    appearance: radio;	
+}
+.side-bar-options ul li input[type=radio] {
+    -webkit-appearance: radio;
+    appearance: radio;
+}
+
+.side-bar-options ul li select {
+	-webkit-appearance: menulist;
+	-moz-appearance: menulist;
+}
+
+.side-bar-options button {
+	vertical-align: middle;
+	font-size: 15px;
+	color: #fff;
+	background-color: #00aeef;
+	text-transform: uppercase;
+	padding: 16px 22px 14px 22px;
+	cursor: pointer;
+	margin: 20px 0 20px ;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+/*--Team Input--*/
+.team-input {
+	width: 100%;
+}
+
+.team-input > div:not(:last-child) {
+	display: inline-block;
+	min-height: 400px;
+	max-height: 400px;
+	width: 49%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	text-align: center;
+	background-color: #f9f9f9;
+	border-radius: 13px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+
+}
+
+.team-input > div:not(:last-child) > div:not(:first-child) {
+	padding-left: 20px;
+}
+.team-input > div:not(:last-child) > div:not(:first-child) > div {
+	display: block;
+	max-width: 460px;
+	background: #eff0f2;
+	margin: 10px 0;
+	border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.team-input > div:not(:last-child) > div:not(:first-child) > div > img {
+	float: left;
+	display: inline-block;
+}
+.team-input > div:not(:last-child) > div:not(:first-child) > div > div:not(:last-child) {
+	float: left;
+	padding: 20px 0 0 10px;
+}
+.team-input > div:not(:last-child) > div:not(:first-child) > div > div > label {
+	display: block;
+}
+/*-- Leagues, Teams, Players --*/
+.leagues, .teams, .players {
+	width: 100%;
+}
+.leagues label, .teams label, .players label {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.leagues > div:not(:last-child), .teams > div:not(:last-child), .players > div:not(:last-child)  {
+	text-align: center;
+	float: left;
+	width: 30%;
+	display: inline-block;
+	padding: 5px;
+}
+
+.leagues > div:not(:last-child) > div > label:first-of-type, .teams > div:not(:last-child) > div > label:first-of-type,
+.players > div:not(:last-child) > div > label:first-of-type {
+	font-weight: 900;
+}
+
+.selected-league label {
+	display: block;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.selected-team-individual label, .selected-player-individual label {
+	font-size: 20px;
+	line-height: 1;
+}
+/*-- Selected League, Selected Team, Selected Player --*/
+.selected-league-info, .selected-team-info, .selected-player-info {
+	width: 100%;
+}
+.selected-league a > label, .selected-team a > label, .selected-player a > label {
+	
+}
+.selected-league-info > div:not(:last-child), .selected-team-info > div:not(:last-child),
+.selected-player-info > div:not(:last-child){
+	float: left;
+	background: #f9f9f9;
+	overflow-y: scroll;
+	width: 49%;
+	height: 300px;
+	max-height: 300px;
+	margin: 0 5px;
+    border: 2px solid #dddedf;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.selected-league-info > div:not(:last-child) > div, .selected-team-info > div:not(:last-child) > div,
+.selected-player-info > div:not(:last-child) > div {
+	background: #f9f9f9;
+
+}
+.selected-league-info > div:not(:last-child) > div:nth-child(2n), .selected-team-info > div:not(:last-child) > div:nth-child(2n),
+.selected-player-info > div:not(:last-child) > div:nth-child(2n) {
+	background: #eff0f2;
+}
+.selected-league-info > div:not(:last-child) label, .selected-team-info > div:not(:last-child) label,
+.selected-player-info > div:not(:last-child) label {
+	font-size: 25px;
+	padding: 5px 0 5px 25px;
+}
+
+/*-- Team-Individual --*/
+.selected-team-individual, .selected-player-individual {
+	margin: 30px 0;
+	width: 100%;
+}
+.selected-team-individual > div:not(:last-child), .selected-player-individual > div:not(:last-child) {
+	float: left;
+	display: inline-block;
+	width: 48%;
+	margin: 0 10px;
+}
+.select-team-options > ul > li > div > button {
+	background: #3abdee;
+	padding: 10px;
+	margin: 0 5px;
+}
+
+.selected-team-game-info label, .selected-player-game-info label {
+	font-weight: normal;
+}
+
+.selected-team-interpretation, .selected-player-interpretation {
+	margin: 10px 0;
+}
+
+.selected-team-interpretation table, .selected-player-interpretation table {
+	width: 100%;
+}
+
+.selected-team-interpretation table tr td:not(:first-child),
+.selected-player-interpretation table tr td:not(:first-child){
+	text-align: center;
+	padding: 10px 0;
+}
+
+.selected-team-interpretation table tr td, .selected-team-interpretation table tr th,
+.selected-player-interpretation table tr td, .selected-player-interpretation table tr th {
+	font-size: 20px;
+	color: #425465;
+}
+.selected-team-players, .selected-player-statistics {
+	overflow-y: scroll;
+	max-height: 100px;
+	border-top: 2px solid #dddedf;
+	border-bottom: 2px solid #dddedf;
+
+}
+.selected-team-players > div, .selected-player-statistics > div {
+	padding: 5px 0;
+}
+.selected-team-players > div:nth-child(2n), .selected-player-statistics > div:nth-child(2n) {
+	background: #dddedf;
+}
+
+.radio-button-team-zones, .radio-button-player-zones {
+	font-size: 12px;
+	margin: 10px 0 40px;
+}
+/*-- Player-Individual --*/
+.select-player-options > ul > li > div > button {
+	background: #3abdee;
+	padding: 10px;
+	margin: 0 5px;
+}
+/*-- In-Game --*/
+p {
+	display: inline-block;
+	font-size: 20px;
+	padding: 5px;
+	border: 2px solid #dddedf;
+}
+
+.sub-button {
+	background: gray;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.sub-button.substitute-menu-button {
+	background: #00aeef;
+}
+.in-game-side-options button {
+    color: white;
+	font-size: 12px;
+	padding: 2px;
+    margin: 0;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.in-game-side-options > ul > li > .clock-button {
+    padding: 5px;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.in-game-side-options ul li:first-child {
+	padding-top: 30px;
+}
+.in-game-side-options ul li {
+	padding: 10px 0;
+}
+
+
+.in-game-side-options label {
+	display: inline-block;	
+}
+
+.in-game-scoreboard { 
+	width: 100%;
+}
+
+.in-game-scoreboard > div:not(:last-child) {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	border: 2px solid #dddedf;
+	width: 50%;
+}
+
+.in-game-scoreboard > div:not(:last-child) > label {
+	display: block;
+}
+
+.shot-chart, .shot-chart-home, .shot-chart-away, .team-shot-chart,
+.player-shot-chart, .team-home-shot-chart, .team-away-shot-chart {
+	height: 375px;
+	width: 500px;
+	background: url('./images/half-court-resize.png');
+}
+.shot-chart-help > div {
+	padding: 20px 0;
+}
+.shot-chart-help label {
+	font-size: 20px;
+	font-weight: normal;
+}
+.shot-chart-help label:first-of-type {
+	color: green;
+	padding-right: 15px;
+}
+
+.shot-chart-help label:last-of-type {
+	color: red;
+	padding-left: 15px;
+}
+
+.in-game-save-button {
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+	cursor: pointer;
+	background: #00aeef;
+	letter-spacing: 5px;
+	font-size: 12px;
+    color: white;
+    text-align: center;
+    min-width: 140px;
+    padding: 11px 30px 12px;
+    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.in-game-shot-options {
+	width: 100%;
+}
+
+.in-game-shot-options > div:not(:last-child) {
+	float: left;
+	text-align: left;
+	width: 48%;
+	margin: 0 5px;
+}
+.in-game-shot-options > div:not(:last-child) label {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 1;
+}
+
+.in-game-team-options > div {
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 10px 0;
+	border: 2px solid #dddedf;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+
+}
+.in-game-team-options > div > ul {
+	padding: 10px 0;	
+}
+.team-home-list, .team-away-list, .team-list {
+	margin: 0 25px;
+}
+.team-home-list img, .team-away-list img, .team-list img,
+.load-team-home-list img, .load-team-away-list img {
+	display: inline-block;
+}
+
+.indiv-player-info {
+	padding-left: 10px;
+}
+.indiv-player-info h3 {
+	text-align: left;
+	padding: 3px 0 3px 5px;
+}
+.indiv-player-info > div > div:not(:last-child) {
+	float: left;
+	width: 33%;
+}
+.indiv-player-info > div {
+	padding-top: 10px;
+}
+
+.indiv-player-stats {
+	overflow-y: scroll;
+    height: 130px;
+    min-height: 130px;
+    max-height: 130px;
+}
+.indiv-player-shots > div {
+	overflow-y: scroll;
+    height: 65px;
+    min-height: 65px;
+    max-height: 65px;	
+}
+.ft-1 > p, .ft-2 > p {
+	display: block;
+}
+.fa-user {
+	border: 2px solid black;
+    padding: 5px;
+}
+.slick-prev:before, .slick-next:before {
+	color: #00aeef;
+}
+/*--Load Game--*/
+.load-game-shot-options {
+	width: 100%;
+}
+.load-game-shot-options > div:not(:last-child) {
+	float: left;
+	width: 49%;
+	margin: 0 5px;
+}
+
+.load-game-shot-options > div > img {
+	margin: 10px 0;
+}
+
+.load-game-side-options > ul > li > div > button {
+	background: #3abdee;
+	padding: 10px;
+	margin: 0 5px;
+}
+
+.load-game-side-options > ul > li:nth-child(2),
+.load-game-side-options > ul > li:nth-child(3) {
+	border: 2px solid #eff0f2;
+}
+
+.load-game-side-options > ul > li:nth-child(2) > *,
+.load-game-side-options > ul > li:nth-child(3) > * {
+	margin: 7px 0;
+}
+
+.load-team-home, .load-team-away {
+	margin-top: 10px;
+	padding: 10px 0;
+	border: 2px solid #dddedf;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.load-game-shot-options ul {
+	margin: 0 25px;
+}
+.load-game-shot-options label {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1;
+}
+/*-- Modal --*/
+.modal-overlay {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-overlay label {
+	font-family: 'Montserrat-ExtraBold', sans-serif;
+	font-size: 30px;
+	font-weight: 900;
+	color: #425465;
+	line-height: 2;
+}
+
+.modal-content {
+	background-color: #eff0f2;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+.modal-content.add-team {
+	margin: 8% 12% auto;
+}
+.modal-header {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #dddedf;
+}
+.modal-header.add-team-header {
+	padding-bottom: 0px;
+}
+.substitute-menu {
+	padding-top: 5px;
+}
+.substitute-menu label {
+	font-size: 20px;
+}
+.add-team-menu, .add-league-menu {
+	font-size: 13px;
+}
+.add-team-menu label, .add-league-menu label {
+	display: block;
+
+}
+.add-team-menu select, .add-team-menu ul > li > input[type="text"],
+.add-league-menu ul > li > input[type="text"] {
+	font-size: .875rem;
+    color: #2e3235;
+    min-width: 245px;
+    max-width: 245px;
+    background: #f2f5f7;
+    padding: 7px 0 7px 7px;
+    border: 2px solid #dddedf;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.add-team-menu select {
+	-webkit-appearance: menulist;
+	-moz-appearance: menulist;
+}
+.add-team-menu ul li, .add-league-menu ul li {
+	padding: 5px 0;
+}
+.add-team-button, .add-league-button {
+	vertical-align: middle;
+	font-size: 15px;
+	color: #fff;
+	background-color: #00aeef;
+	text-transform: uppercase;
+	padding: 16px 22px 14px 22px;
+	cursor: pointer;
+	margin: 20px 0 20px ;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.add-team-menu-add-players {
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 510px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    border: 2px solid #dddedf;
+    border-radius: 13px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+
+}
+
+.add-team-menu-add-players > div {
+	width: 100%;
+    display: inline-block;
+    padding: 10px;
+}
+.add-team-menu-add-players > div > div {
+	width: 33%;
+    float: left;
+}
+
+.add-team-menu-add-players input[type="text"] {
+	font-size: .875rem;
+    color: #2e3235;
+    min-width: 135px;
+    max-width: 135px;
+    background: #f2f5f7;
+    padding: 5px 0px 5px 7px;
+    border: 2px solid #dddedf;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.add-team-menu-add-players, .add-team-menu-add-players .upload-image, .add-league-menu .upload-image {
+    font-size: 13px;
+    padding-top: 3px;
+}
+.side-bar-options button:hover { background-color: #3abdee; }
+.team-input > div:not(:last-child) > div:not(:first-child) > div:hover { background-color: #3abdee; }
+.leagues > div:not(:last-child):hover, .teams > div:not(:last-child):hover, .players > div:not(:last-child):hover { cursor: pointer; background-color: #3abdee; }
+.section-content a > label:hover { cursor: pointer; color: #3abdee; }
+.selected-league-info > div:not(:last-child) > div:hover, .selected-team-info > div:not(:last-child) > div:hover,
+.selected-player-info > div:not(:last-child) > div:hover { background-color: #3abdee; }
+/*.sub-button:hover { background-color: #3abdee; }*/
+.in-game-save-button:hover { background-color: #3abdee; }
+.sub-button.substitute-menu-button:hover { background-color: #3abdee; }
+.add-button:hover { background-color: #3abdee; }
+/*-- Background --*/
+
+/*-- UNIVERSAL --*/
+.clear { *zoom: 1;}
+.clear:before, 
+.clear:after { content: " "; display: table;}
+.clear:after { clear: both;}
+
+.table { display: table; width: 100%; height: 100%;}
+
+.row { display: table-row; font-size: 0;}
+
+.cell { display: table-cell; vertical-align: middle;}
+
+.text-center { text-align: center;}
+.text-left { text-align: left;}
+.text-right { text-align: right;}

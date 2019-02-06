@@ -94,7 +94,7 @@
     $_POST['SelectedGameName'] = $SelectedGameName;
     $_POST['SelectedGameID'] = $SelectedGameID;
 
-    
+    echo "a";
 	header("Location: ./../load-game.php");
 
 ?>
